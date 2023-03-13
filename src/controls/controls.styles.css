@@ -1,0 +1,36 @@
+  /* Containers */
+  .show-controls {
+    width: 100%;
+    height: 30%;
+    /* background: dodgerblue; */
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    cursor: default;
+    border: 5px solid red;
+  }
+
+  .controls_container {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 95px;
+    margin-top: -95px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all 0.3s ease-out 2s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid red;
+  
+  }
+  .show-controls:hover .controls_container{
+    opacity: 1;
+    transition: all 0.2s ease-out ;
+    border: 5px solid blue;
+  
+  }
